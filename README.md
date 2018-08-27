@@ -26,3 +26,12 @@ run `npm run lint` this will show if you have any ESLint errors or warnings. It 
 - The gulp task creates a `build` folder which holds all of the minified css and js files. This is regenerated everytime the scss or js files are saved when the server is running by the command `gulp`
 
 - In this version, the grocery list data was saved within our file structure. Here we render the groceries.json data through a handlebars template, allowing us to not have to write any client side javascript as we are rendering the html template on the server side. See version bofa-2 for a client side javascript solution.
+
+# Technology used
+- node.js
+- scss
+- JavaScript
+- html5
+- handlebars
+- gulp
+- eslint
