@@ -1,0 +1,139 @@
+// import scss files needed
+
+@import "partials/_variables";
+
+#grocery-list-section {
+  padding-top: 20px;
+  color: #2C3A47;
+  font-family: Arial;
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  .product-wrapper {
+    border-right: 5px solid #E17055;
+    border-bottom: 5px solid #E17055;
+    padding: 20px;
+    background-color: #FFF4D5;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .product-qty {
+    float: right;
+    color: #E17055;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: -10px;
+    position: relative;
+  }
+  .product-item {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  .product-brand {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .product-category {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #E17055;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  hr {
+    background-color: gray;
+    border: none;
+    margin-top: 5px;
+    height: 2px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+#grocery-list-section .hover-shadow {
+  display: inline-block;
+  position: relative;
+  transition-duration: $defaultDuration;
+  transition-property: transform;
+
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
+    transition-duration: $defaultDuration;
+    transition-property: transform opacity;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    animation-name: hover;
+    animation-duration: 1.5s;
+    animation-delay: $defaultDuration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &:before {
+      opacity: .4;
+      transform: translateY(6px);
+      animation-name: hover-shadow;
+      animation-duration: 1.5s;
+      animation-delay: .3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+}
+
+// classes for browser screen size 1200px or greater
+@media (min-width: 1200px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+// classes for browser screen size 1200px or less
+@media (max-width: 1200px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+// classes for browser screen size between 768px and 1024px
+@media (min-width:768px) and (max-width:1024px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+// classes for browser screen size between 320px and 767px
+@media (min-width:320px) and (max-width:767px) {
+  .container {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
