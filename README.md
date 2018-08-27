@@ -17,7 +17,11 @@ Coding assessment for Bank of America
 # Linting
 run `npm run lint` this will show if you have any ESLint errors or warnings. It is good practice to keep code consistent amongst developers.
 
+# Desktop View
 <img src="https://thumbs.gfycat.com/FoolishImpracticalAfricanpiedkingfisher-size_restricted.gif" width="600" height="400" />
+
+# Mobile View
+<img src="https://thumbs.gfycat.com/FaintImportantKillifish-size_restricted.gif" width="200" height="400" />
 
 # About this project
 
