@@ -1,0 +1,26 @@
+<section id="grocery-list-section" aria-label="grocery-list-section">
+  <div class="container">
+    <h1 aria-label="{{title}}">{{title}}</h1>
+    <ul class="row">
+      {{#each hbsObject.data}}
+        <li class="grid-25">
+         <div class="product-wrapper grid-100 hover-shadow">
+          <p class="product-qty" title="{{this.qty}}" data-quantity="{{this.qty}}">
+          qty: {{this.qty}}
+          </p>
+          <p class="product-item" data-item="{{item}}" title="{{item}}">
+          {{item}}
+          </p>
+          <hr>
+          <p class="product-brand" title="{{brand}} {{type}}" data-brand="{{brand}}" data-type="{{type}}">
+            {{brand}} {{type}}
+          </p>
+          <p class="product-category" title="{{category}}" aria-label="{{category}}">
+            {{category}}
+          </p>
+         </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
