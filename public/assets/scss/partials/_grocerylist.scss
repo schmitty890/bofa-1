@@ -4,7 +4,7 @@
 
 #grocery-list-section {
   padding-top: 20px;
-  color: #2C3A47;
+  color: $primary-text-color;
   font-family: Arial;
   h1 {
     font-size: 36px;
@@ -16,16 +16,16 @@
     margin-bottom: 20px;
   }
   .product-wrapper {
-    border-right: 5px solid #E17055;
-    border-bottom: 5px solid #E17055;
+    border-right: 5px solid $primary-accent-color;
+    border-bottom: 5px solid $primary-accent-color;
     padding: 20px;
-    background-color: #FFF4D5;
+    background-color: $primary-background-color;
     height: 200px;
     margin-bottom: 10px;
   }
   .product-qty {
     float: right;
-    color: #E17055;
+    color: $primary-accent-color;
     font-weight: bold;
     text-transform: uppercase;
     top: -10px;
@@ -45,7 +45,7 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #E17055;
+    color: $primary-accent-color;
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -98,7 +98,7 @@
       transform: translateY(6px);
       animation-name: hover-shadow;
       animation-duration: 1.5s;
-      animation-delay: .3s;
+      animation-delay: $defaultDuration;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-direction: alternate;
