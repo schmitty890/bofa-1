@@ -30,7 +30,6 @@ app.use('/build', express.static(__dirname + '/build'));
 
 // get all routes
 require('./controllers/html-routes.js')(app);
-// require('./controllers/api-routes.js')(app);
 
 // show 404 page if no route has been hit
 app.get('*', function(req, res) {
